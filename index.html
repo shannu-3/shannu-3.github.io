@@ -61,7 +61,7 @@
       }
       scriptLoaded = true;
       var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
+      scriptTag.src = 'main.dafrt.js';
       scriptTag.type = 'application/javascript';
       document.body.append(scriptTag);
     }
@@ -72,7 +72,7 @@
         // Wait for registration to finish before dropping the <script> tag.
         // Otherwise, the browser will load the script multiple times,
         // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+        var serviceWorkerUrl = 'flutterff_service_worker.js?v=' + serviceWorkerVersion;
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
             function waitForActivation(serviceWorker) {
@@ -96,7 +96,7 @@
             } else {
               // Existing service worker is still good.
               console.log('Loading app from service worker.');
-              loadMainDartJs();
+              loadMainDafffrtJs();
             }
           });
 
@@ -107,7 +107,7 @@
             console.warn(
               'Failed to load app from service worker. Falling back to plain <script> tag.',
             );
-            loadMainDartJs();
+            loadMaifnDartJs();
           }
         }, 4000);
       });
